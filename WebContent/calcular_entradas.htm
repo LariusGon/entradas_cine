@@ -1,0 +1,64 @@
+<!doctype html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="utf-8">
+
+  <title>Calcular Entradas de Cine</title>
+  <meta name="description" content="Calculo entradas de cine">
+  <meta name="author" content="Lara Gonzalez">
+  
+  
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  
+  
+ </head>
+ <body>
+	<div id="home">
+
+		<section>
+
+			<div id="contenido">
+
+				<form name="formulario" method="post">
+
+					<span id="titulo">!Calcula tu entrada!</span>
+					
+					<div id="cuadrodias">
+						<label for="listaDias">Dia:</label>
+						<select id="listaDias" onchange="calcularEntrada();">
+							<option value="lunes">Lunes</option>
+							<option value="martes" selected="selected">Martes</option>
+							<option value="miercoles">Miércoles</option>
+							<option value="jueves">Jueves</option>
+							<option value="viernes">Viernes</option>
+							<option value="sabado">Sábado</option>
+							<option value="domingo">Domingo</option>
+						</select>
+					</div>
+
+					<div id="cuadroEdad">
+						<label for="edad">Edad:</label>
+						<input type="text" id="edad" onchange="calcularEntrada();" maxlength="3" value="16" required title="Debes escribir la edad" placeholder="0-99"/>
+					</div>
+
+					<span id="etiquetaPrecio">PRECIO</span>
+
+					<span id="precio">2€</span>				
+
+				</form>
+
+			</div>
+
+		</section>
+  
+	</div>	<!-- home -->
+  	
+  
+  <script type="text/javascript" src="js/new.js"></script>  
+  
+ </body>
+  
+</html>
